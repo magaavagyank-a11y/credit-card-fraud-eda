@@ -1,3 +1,6 @@
 data/creditcard.csv
 data/creditcard.csv
 data/*.csv
+data/creditcard.csv
+data/*.csv
+.DS_Store
