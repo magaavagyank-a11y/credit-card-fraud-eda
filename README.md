@@ -4,10 +4,22 @@ Exploratory data analysis and baseline machine-learning models for the
 [Kaggle Credit Card Fraud Detection dataset](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
 (284,807 transactions, 492 of them fraud).
 
+## Interactive Dashboard
+
+[![Credit Card Fraud Dashboard](images/tableau_dashboard.png)](https://public.tableau.com/app/profile/margarita.avagyan/viz/CreditCardFraudRatesandCostThreshold/CreditCardFraudDashboard)
+
+**[Open the interactive dashboard on Tableau Public →](https://public.tableau.com/app/profile/margarita.avagyan/viz/CreditCardFraudRatesandCostThreshold/CreditCardFraudDashboard)**
+
+Where fraud happens (by hour and transaction amount) and what a cost-based decision threshold saves:
+a cutoff of 0.97 catches 89% of fraud at 48% precision, reducing expected loss from 9,800 to 1,575
+(assuming a missed fraud costs 100 and a false alarm costs 5).
+
 ## Project Structure
 
 ```
 ├── data/                       # dataset location (not included in the repo)
+├── images/
+│   └── tableau_dashboard.png   # dashboard preview for the README
 ├── notebooks/
 │   └── CreditCardEDA.ipynb     # main notebook: EDA, feature engineering, models
 ├── requirements.txt
